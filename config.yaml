@@ -25,3 +25,48 @@ subscriptions:
     stage: A
     diff_threshold_pct: 15
   keyword_recall_mode: or
+  intent_profiles:
+    - tag: WorldModel
+      description: 关于世界模型及其应用研究的论文检索
+      enabled: true
+      paper_sources:
+        - arxiv
+      keywords:
+        - keyword: world model
+          keyword_cn: 世界模型
+          query: 为
+        - keyword: 世界模型
+          keyword_cn: 世界模型
+          query: world model architectures and frameworks in machine learning
+      intent_queries:
+        - query: recent research papers on world model applications in machine learning and AI
+          query_cn: 关于世界模型在机器学习与人工智能中的应用研究论文
+          enabled: true
+          source: manual
+          note: ''
+        - query: survey of methods utilizing world models for decision making and planning
+          query_cn: 利用世界模型进行决策与规划的方法综述
+          enabled: true
+          source: manual
+          note: ''
+        - query: studies exploring the integration of world models with reinforcement learning
+          query_cn: 将世界模型与强化学习相结合的研究
+          enabled: true
+          source: manual
+          note: ''
+      updated_at: '2026-04-28T09:06:38.035Z'
+source_backends:
+  arxiv:
+    papers_table: arxiv_papers
+    use_vector_rpc: true
+    vector_rpc: match_arxiv_papers
+    vector_rpc_exact: match_arxiv_papers_exact
+    use_bm25_rpc: true
+    bm25_rpc: match_arxiv_papers_bm25
+    sync_table: arxiv_sync_status
+    sync_success_value: success
+    schema: public
+    kind: supabase
+    enabled: true
+    url: https://lyucdwgefyfbmaiopjbk.supabase.co
+    anon_key: sb_publishable_lX-oi64Uxyd7SIVv3_w2Uw_MTOojeKq
