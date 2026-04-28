@@ -1,0 +1,118 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-001.webp",
+      "caption": "Table 2: Statistics for each domain, including the number of problems, the Mean Optimal Plan Length (MOPL), and the total number of alternatives (steps).",
+      "page": 6,
+      "index": 1,
+      "width": 435,
+      "height": 311
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-002.webp",
+      "caption": "Table 16: Complete results on MR-Ben (Math, Biology and Physics domains). † indicates PRMs we trained; best results in bold.",
+      "page": 21,
+      "index": 2,
+      "width": 846,
+      "height": 361
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-003.webp",
+      "caption": "Table 15: Detailed results on PRMBench. † indicates PRMs we trained; best results in bold.",
+      "page": 21,
+      "index": 3,
+      "width": 941,
+      "height": 189
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-004.webp",
+      "caption": "Table 14: Simplicity, Soundness and Sensitivity results on PRMBench. † indicates PRMs we trained; best results in bold.",
+      "page": 21,
+      "index": 4,
+      "width": 921,
+      "height": 221
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-005.webp",
+      "caption": "Table 17: Complete results on MR-Ben (Medicine, Chemistry and Logic domains). † indicates PRMs we trained; best results in bold.",
+      "page": 21,
+      "index": 5,
+      "width": 846,
+      "height": 361
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-006.webp",
+      "caption": "Figure 1: End-to-end workflow of the proposed framework: from PDDL problem generation, to dataset construction with step-level rewards, to PRM training.",
+      "page": 2,
+      "index": 6,
+      "width": 950,
+      "height": 229
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-007.webp",
+      "caption": "Table 3: Results on ProcessBench. † indicates PRMs we trained; best results in bold.",
+      "page": 8,
+      "index": 7,
+      "width": 923,
+      "height": 259
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-008.webp",
+      "caption": "Figure 2: Example from the MATH subset of ProcessBench. We report scores from two PRMs based on Llama + PRM800k. The PDDL-trained PRM more strongly penalizes the incorrect combinatorial formulation, where the reasoning restricts the solution space to permutations of fixed groups, excluding valid interleavings across types.",
+      "page": 19,
+      "index": 8,
+      "width": 950,
+      "height": 341
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-009.webp",
+      "caption": "Figure 3: Example from the Medicine subset of MR-Ben. We report scores from two PRMs based on Qwen2.5Math-PRM-7B. The PDDL-trained PRM assigns a lower score to the fourth reasoning step, correctly penalizing a biologically incorrect justification that conflates RNA composition with its functional role in protein synthesis.",
+      "page": 19,
+      "index": 9,
+      "width": 950,
+      "height": 366
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-010.webp",
+      "caption": "Table 5: Results on MR-Ben. † indicates PRMs we trained; best results in bold. The full version of this table, including error and correct accuracies, is reported in Appendix F.",
+      "page": 9,
+      "index": 10,
+      "width": 837,
+      "height": 277
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-011.webp",
+      "caption": "Table 6: Results on the PDDL test set. † indicates PRMs we trained; best results in bold.",
+      "page": 9,
+      "index": 11,
+      "width": 715,
+      "height": 290
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-012.webp",
+      "caption": "Table 11: Classification vs. Regression on ProcessBench. † indicates PRMs we trained; best results in bold. (Qwen2.5-Math-7B-PRM800k is trained as a classifier).",
+      "page": 20,
+      "index": 12,
+      "width": 941,
+      "height": 190
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-013.webp",
+      "caption": "Table 13: Classification vs. Regression on PDDL test set. † indicates PRMs we trained; best results in bold. (Qwen2.5-Math-7B-PRM800k is trained as a classifier).",
+      "page": 20,
+      "index": 13,
+      "width": 771,
+      "height": 223
+    },
+    {
+      "url": "assets/figures/arxiv/2604.17957v1/fig-014.webp",
+      "caption": "Table 12: Classification vs. Regression on MR-Ben. † indicates PRMs we trained; best results in bold. (Qwen2.5Math-7B-PRM800k is trained as a classifier).",
+      "page": 20,
+      "index": 14,
+      "width": 893,
+      "height": 209
+    }
+  ]
+}

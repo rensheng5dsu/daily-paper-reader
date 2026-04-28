@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "extractor": "pdffigures2",
+  "figures": [
+    {
+      "url": "assets/figures/arxiv/2604.19639v1/fig-001.webp",
+      "caption": "Fig. 5: Contextual observation pipeline at the most constraining warmed-up step of two structurally opposite obstacle modes (top: SW cluster; bottom: NE cluster), out of the four quadrant-clustered modes the experiment cycles through every 40 steps. Column 1: three-channel raster st (red = obstacles, green = robot, blue = goal). Column 2: embedding ξt = tanh(Rvec(st)); the two rows carry visibly distinct patterns, so the context kernel can separate the modes. Column 3: conditional density p̂(u | ξt) over the admissible action disk, with feasibility boundary ∂Mt overlaid in red dashed; annotations give the conditional feasibility-mass. Column 4: context signal p̂(u | ξt)− p̂(u)—red adds mass, blue suppresses it. The key quantity ∆safe = Pr(u∈Mt | p̂(· | ξt))−Pr(u∈Mt | p̂(·)) reported above each Column 4 panel measures the directional value of context—the excess feasibility-mass the conditional concentrates inside Mt relative to the pooled marginal—and is the empirical counterpart of the strictly positive σ2 t that drives the safety gap in Theorem 5.",
+      "page": 15,
+      "index": 1,
+      "width": 1015,
+      "height": 416
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19639v1/fig-002.webp",
+      "caption": "Fig. 4: Contextual adaptation under obstacle reshuffle (T=1000, N=300 samples/step, reshuffle at t=T/2). Top row: Trajectories colored by phase (lighter before reshuffle, darker after); red × markers indicate safety violations. Left: PPC-Context (Ours) leverages the context signal ξt to rapidly adapt its density model after the manifold shift, achieving safety competitive with the oracle baseline using only black-box samples. Center: Offline DRGD uses a frozen score pretrained on 500 samples at t=0; after the reshuffle its stale model fails to track the new manifold, producing frequent violations. Right: CBF-QP (oracle) has direct access to exact obstacle positions and radii at every step, which is an information advantage unavailable in the black-box setting. Bottom row: (d) Rolling safety rate with reshuffle marked (magenta line); (e) cumulative violations; (f) rolling tracking cost. PPC-Context approaches oracle-level safety using only simulator samples, while offline pretraining without online updates collapses after the shift.",
+      "page": 14,
+      "index": 2,
+      "width": 1060,
+      "height": 515
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19639v1/fig-003.webp",
+      "caption": "Fig. 11: Dynamic regret experiment validating Theorem 2 (T=500, five seeds). (a) Normalized tracking cost vs. obstacle speed multiplier. (b) Cost vs. manifold path length PT (proxy for VT ) with a linear fit and Pearson correlation r; the positive trend is consistent with the O(VT ) scaling in (28). (c) Safety rate remains above 90% across all speeds.",
+      "page": 18,
+      "index": 3,
+      "width": 896,
+      "height": 258
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19639v1/fig-004.webp",
+      "caption": "Fig. 10: Scalability with number of obstacles (Ko ∈ {3,5,10,15,20}, three seeds, T=300); see Table III. (a) PPC degrades gracefully (0.92→ 0.85) while CBF-QP drops to 0.40 and CEM drops to 0.62. (b) Total tracking cost. (c) Wall-clock time per step.",
+      "page": 18,
+      "index": 4,
+      "width": 897,
+      "height": 259
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19639v1/fig-005.webp",
+      "caption": "Fig. 12: Contextual control ablation (five seeds; T=1000, recurring mode switches every 40 steps across nmodes=4 structurally distinct obstacle layouts). (a) Average total safety-violation counts: PPC-Context incurs only ≈12 violations per episode versus ≈69 for PPC-Marginal and ≈94 for Offline Contextual, a roughly 5× reduction attributable to the context kernel. (b) Per-seed scatter of steady-state (within-mode) versus post-switch (first 10 steps after each mode change) safety: PPC-Context clusters near the (1,1) corner, PPC-Marginal is shifted toward lower safety on both axes, and Offline Contextual is dispersed further down. (c) Cumulative violations over time: PPC-Context stays near zero, while PPC-Marginal and Offline Contextual accrue violations continuously as modes cycle. (d) Rolling safety (window= 40): PPC-Context tracks each mode switch rapidly via the context kernel, whereas PPC-Marginal dips at every switch because its buffer now mixes feasibility samples from all past modes. The visible context–marginal gap (≈5.6% on aggregate safety, ≈4.8% on post-switch safety) is precisely the Gc σ2 t /(βt κ(ξt)κmarg) residual predicted by Theorem 5: multiple mode layouts drive the posterior score-covariance σ2 t strictly positive, and this directly translates into a safety advantage for PPC-Context.",
+      "page": 19,
+      "index": 5,
+      "width": 847,
+      "height": 513
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19639v1/fig-006.webp",
+      "caption": "Fig. 8: Free-energy landscape at t=200. (a) Cost c(u) with true manifold boundary (blue) and learned M̂α t (cyan dashed). (b) Free energy F(u) with the PPC equilibrium u∗ (red) and density maximizer ū (cyan). (c) Geometric gaps: the empirical ∥u∗−ū∥ is well within the theoretical bound Gc/(βκ) from Proposition 2, and dist(u∗,∂Mt)> 0 confirms the equilibrium is safely interior.",
+      "page": 17,
+      "index": 6,
+      "width": 953,
+      "height": 272
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19639v1/fig-007.webp",
+      "caption": "Fig. 9: Effect of sample budget on safety and score estimation quality. Safety rate (blue, left) crosses 95% between N=100 and N=500. The empirical squared score error (red, right, log scale) is measured against a reference KDE built from 10,000 samples. The black dashed line is a least-squares fit of aN b̂ in log-log space; the estimated exponent b̂≈−0.96 is steeper than the worst-case −1/3 from Theorem 3. See Table II.",
+      "page": 17,
+      "index": 7,
+      "width": 447,
+      "height": 301
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19639v1/fig-008.webp",
+      "caption": "Fig. 6: Main comparison across all methods (T=1000, N=300 feasibility samples per step, five seeds, mean ± std); see Table I. The trajectory figure (Figure 4) uses the same per-step sample budget. (a) Safety rate. (b) Normalized cost (Oracle = 1.0). (c) Wall-clock time per step.",
+      "page": 16,
+      "index": 8,
+      "width": 956,
+      "height": 252
+    },
+    {
+      "url": "assets/figures/arxiv/2604.19639v1/fig-009.webp",
+      "caption": "Fig. 7: Stiffness ablation validating Proposition 2. The critical stiffness β ∗curv = Gc/(κ rα) is computed from the formula (median over seeds). Safety rate (blue, left axis) rises from ∼76% to ∼96% and crosses the 95% threshold near β = β ∗curv (red dashed), confirming the predicted phase transition. Tracking cost (orange, right axis) is low for small β but rises sharply beyond β ∗curv, illustrating the cost-safety trade-off governed by barrier curvature.",
+      "page": 16,
+      "index": 9,
+      "width": 455,
+      "height": 298
+    }
+  ]
+}
